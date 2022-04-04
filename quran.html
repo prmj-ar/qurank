@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-dark" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Description" CONTENT="القران الرقمي بدون تحميل معى ميزة حفظ اخر سورة مقرؤءة">
+    <meta name="google-site-verification" content=""/>
+    <title>القران الرقمي, اقراء القران عن طريق المتصفح</title>
+    <meta name="robots" content="noindex,nofollow">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet"> 
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+
+
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <!--   <link rel="stylesheet" type="text/css" href="https://prmj.xyz/css/xbootstrap.rtl.css?v1=1"  > -->
+<link rel="stylesheet" href="/css/xbootstrap.rtl.css"  >
+<script src="/quran.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     </head>
+     <body class="bg-dark text-light">
+
+       <nav class="navbar navbar-expand-lg navbar-dark   bg-secondary shadow px-2 p-4 ">
+         <div class="container-fluid">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <a class="navbar-brand" href="#">القران الرقمي</a>
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="#">كيف تبرمج موقع خاص فيك للقران؟</a>
+               </li>
+        
+               <li class="nav-item">
+                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">قريبا</a>
+               </li>
+             </ul>
+             <form class="d-flex">
+               <input autocomplete="off" class="bg-dark border-rounded border-dark border-3 text-light form-control me-2" id="search_sura" type="search" placeholder="Search" aria-label="ابحث ب الاسم">
+          
+             </form>
+           </div>
+         </div>
+       </nav>
+
+
+<section class="pt-2 pb-2">
+    <!--loding hidden</-->
+<div class="d-flex justify-content-center  pb-1" style="min-height:39px !important;">
+  <div class="spinner-border text-primary fs-4"  id="antdr" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+ <div class="d-flex justify-content-center ">
+    <div class="row g-0 gap-md-2 rows-col-2 d-flex justify-content-sm-center">
+                    <div class="col-3 col-md-3">
+                       <div class=" bg-secondary overflow-auto " id="over_menu" style="height:auto; max-height:500px;">
+    <a href="/" class="d-flex align-items-center flex-shrink-0 p-3   text-decoration-none border-bottom">
+      <i class='bx-fw bx bxs-book-open fs-4 bx-fade-down-hover'></i>
+      <span class="fs-5 fw-semibold">السور</span>
+    </a>
+    <div  id="sura_name_list" class=" list-group list-group-flush border-bottom scrollarea">
+    </div>
+  </div>
+ </div>
+<div class=" col-md-8 col-9 ">
+     <div class="card bg-secondary ayat " >
+     <div class="card-header gap-2">
+     <div class="gap-4 p-2">
+</div>
+     <nav aria-label="Page navigation example" class="table-responsive mb-2">
+     <ul class="pagination pagination-sm btn-rounded "  id="pages">
+     <li class="page-item " aria-current="page">
+    </ul>
+    </nav>
+     </div>
+     <div class="card-body  overflow-auto " style="max-height:600px;" >
+       <h5 class="text-center text-light pt-2 mt-2 px-2 py-2" id="read_sname" style="font-size:29px;"></h5>
+       '<p id="start_aya" class="text-center pb-2"></p>
+       <div class="card-text arb_ayat" id="read_ayat"></div>
+     </div>
+    </div>
+   </div> 
+  </div>
+  </div>
+</section>
+  <div class="container">
+   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+     <div class="col-md-4 d-flex align-items-center">
+       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg></a>
+       <span class="text-muted">برمجة:<a href="https://instagram.com/rgmy.me">RGMY.ME@</a></span>
+       <span class="text-muted me-2 ps-2 pe-2">بمساهمة ومشاركة :<a href="https://instagram.com/4ini">4ini</a></span>
+     </div>
+     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+       <li class="ms-3"><a class="" href="#"><i class='bx bxl-github' width="24" height="24" ></i></li>
+       <li class="ms-3"><a class="" href="#"><i class='bx bxl-tiktok' width="24" height="24" ></i></li>
+       <li class="ms-3"><a class="" href="https://instagram.com/rgmy.me"><i class='bx bxl-instagram-alt bi' width="24" height="24" ></i></li>
+     </ul>
+   </footer>
+
+
+<!--     <select id="suramenu">
+               <option value="1">1. الفاتحة</option><option value="2">2. البقرة</option><option value="3">3. آل عمران</option><option value="4">4. النساء</option><option value="5">5. المائدة</option><option value="6">6. الأنعام</option><option value="7">7. الأعراف</option><option value="8">8. الأنفال</option><option value="9">9. التوبة</option><option value="10">10. يونس</option><option value="11">11. هود</option><option value="12">12. يوسف</option><option value="13">13. الرعد</option><option value="14">14. ابراهيم</option><option value="15">15. الحجر</option><option value="16">16. النحل</option><option value="17">17. الإسراء</option><option value="18">18. الكهف</option><option value="19">19. مريم</option><option value="20">20. طه</option><option value="21">21. الأنبياء</option><option value="22">22. الحج</option><option value="23">23. المؤمنون</option><option value="24">24. النور</option><option value="25">25. الفرقان</option><option value="26">26. الشعراء</option><option value="27">27. النمل</option><option value="28">28. القصص</option><option value="29">29. العنكبوت</option><option value="30">30. الروم</option><option value="31">31. لقمان</option><option value="32">32. السجدة</option><option value="33">33. الأحزاب</option><option value="34">34. سبإ</option><option value="35">35. فاطر</option><option value="36">36. يس</option><option value="37">37. الصافات</option><option value="38">38. ص</option><option value="39">39. الزمر</option><option value="40">40. غافر</option><option value="41">41. فصلت</option><option value="42">42. الشورى</option><option value="43">43. الزخرف</option><option value="44">44. الدخان</option><option value="45">45. الجاثية</option><option value="46">46. الأحقاف</option><option value="47">47. محمد</option><option value="48">48. الفتح</option><option value="49">49. الحجرات</option><option value="50">50. ق</option><option value="51">51. الذاريات</option><option value="52">52. الطور</option><option value="53">53. النجم</option><option value="54">54. القمر</option><option value="55">55. الرحمن</option><option value="56">56. الواقعة</option><option value="57">57. الحديد</option><option value="58">58. المجادلة</option><option value="59">59. الحشر</option><option value="60">60. الممتحنة</option><option value="61">61. الصف</option><option value="62">62. الجمعة</option><option value="63">63. المنافقون</option><option value="64">64. التغابن</option><option value="65">65. الطلاق</option><option value="66">66. التحريم</option><option value="67">67. الملك</option><option value="68">68. القلم</option><option value="69">69. الحاقة</option><option value="70">70. المعارج</option><option value="71">71. نوح</option><option value="72">72. الجن</option><option value="73">73. المزمل</option><option value="74">74. المدثر</option><option value="75">75. القيامة</option><option value="76">76. الانسان</option><option value="77">77. المرسلات</option><option value="78">78. النبإ</option><option value="79">79. النازعات</option><option value="80">80. عبس</option><option value="81">81. التكوير</option><option value="82">82. الإنفطار</option><option value="83">83. المطففين</option><option value="84">84. الإنشقاق</option><option value="85">85. البروج</option><option value="86">86. الطارق</option><option value="87">87. الأعلى</option><option value="88">88. الغاشية</option><option value="89">89. الفجر</option><option value="90">90. البلد</option><option value="91">91. الشمس</option><option value="92">92. الليل</option><option value="93">93. الضحى</option><option value="94">94. الشرح</option><option value="95">95. التين</option><option value="96">96. العلق</option><option value="97">97. القدر</option><option value="98">98. البينة</option><option value="99">99. الزلزلة</option><option value="100">100. العاديات</option><option value="101">101. القارعة</option><option value="102">102. التكاثر</option><option value="103">103. العصر</option><option value="104">104. الهمزة</option><option value="105">105. الفيل</option><option value="106">106. قريش</option><option value="107">107. الماعون</option><option value="108">108. الكوثر</option><option value="109">109. الكافرون</option><option value="110">110. النصر</option><option value="111">111. المسد</option><option value="112">112. الإخلاص</option><option value="113">113. الفلق</option><option value="114">114. الناس</option>
+               </select>
+               -->
+</body>
